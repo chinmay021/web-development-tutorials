@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* universal selector */
+        *{
+            box-sizing: content-box;
+        }
+        body{
+            background-color: #c384c3;
+        }
+
+        .container {
+            background-color: burlywood;
+            border: 3px solid rgb(64, 6, 119);
+            /* padding-top:20px; */
+            /* margin-top: 34px; */
+            /* padding : 23px 56px  6px 78px;  */
+            /* padding/margin: top right bottom left; */
+            /* padding/margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 533px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem harum saepe eos necessitatibus
+            laboriosam, sit quo ad ex quidem omnis facilis non, eaque, asperiores aspernatur dicta. Qui eum ut facilis.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem harum saepe eos necessitatibus
+            laboriosam, sit quo ad ex quidem omnis facilis non, eaque, asperiores aspernatur dicta. Qui eum ut facilis.
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem harum saepe eos necessitatibus
+            laboriosam, sit quo ad ex quidem omnis facilis non, eaque, asperiores aspernatur dicta. Qui eum ut facilis.
+        </p>
+    </div>
+</body>
+
+</html>

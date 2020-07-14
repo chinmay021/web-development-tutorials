@@ -1,0 +1,255 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables */
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    position:relative;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+/*Navigation bar: Logo and Image; */
+ #logo{
+    margin: 0px 8px;
+}
+#logo img{
+    height: 41px;
+    margin: 3px 22px;
+
+}
+
+/*Navigation bar: List Styling; */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(22, 22, 24);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%; 
+    opacity: .8;
+    z-index:-1;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Lexend Tera', sans-serif;
+    /* font-family: 'Baloo 2', cursive; */
+}
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 22px;
+    /* border: 2px red solid; */
+    border-radius: 20px;
+    text-decoration: none;   
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 675px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url(../bg1.jpg) no-repeat center center scroll;
+    background-size:cover;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0.8;
+    z-index:-2;
+    /* border: 2px solid red; */
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 3.8rem;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Baloo 2', cursive;
+}
+/* Services Section */
+
+#services-container::before{
+    content: "";
+    position: absolute;
+    background: url('../bg4.jpg') no-repeat center center/cover;
+
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: .83;
+}
+#services-container{
+    color:white;
+    height: 731px;
+}
+#services{
+    margin:34px;
+    display: flex;
+}
+#services .box{
+    /* border:2px solid red; */
+    padding: 3.5px 80px;
+    margin: 0px 34px;
+    border-radius: 20px;
+    background-color: rgba(44, 39, 37, 0.9);
+    box-shadow:2px 2px 10px 1px rgb(0, 0, 0);
+}
+#services .box img{
+    /* border:2px solid red; */
+    display: block;
+    margin: auto;
+    height: 156px;
+}
+#services .box p{
+    font-family: 'Baloo 2', cursive;
+    color: white;
+}
+/* Client section; */
+#client-section{
+    /* border: 2px solid red; */
+    color: white;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    /* background: url('../bg1.jpg') no-repeat center center/cover; */
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: .83;
+}
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clients img{
+    height: 100px;
+}
+.client-item{
+    /* padding: 34px; */
+}
+/* Contact section */
+#contact{
+   position: relative; 
+   color: white;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+    /* background: url(../contact2.jpg) no-repeat center/cover ; */
+    background: black;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+
+    width: 90%;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem 1rem;
+    background: transparent;
+
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px 1px  rgb(32, 28, 28);
+    font-size: 1.1rem;
+    font-family: 'Baloo 2', cursive;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+}
+footer{
+    background: black;
+    color: rgb(214, 205, 205);
+    padding: 9px 20px;
+}
+#contact-box button{
+    display: block;
+    margin: auto;
+}
+.form{
+    /* border: 2px solid red; */
+    background:#262626;
+    box-shadow: 2px 2px 5px 5px rgb(49, 46, 46);
+}
+/* utility  Classes */
+.h-primary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+    
+}
+.h-secondary{
+    font-size: 1.3rem;
+    padding:12px;
+    font-family: 'Baloo 2', cursive;
+    color:rgba(255, 97, 24,.75);
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgba(255, 97, 24, 0.75);
+    color: white;
+    margin: 17px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

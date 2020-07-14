@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border: 2px solid green;
+            /* border-color: green;
+            border-style: solid;
+            border-width: 4px; */
+            border-radius: 10px;
+        }
+        #secondPara{
+            background-color: yellow;
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid red;
+            border-bottom: 2px solid black;
+            border-left:2px solid blue;
+            border-right:2px solid green;
+            border-bottom-left-radius: 20px;
+        }
+        #thirdPara{
+            height: 500px;
+            width: 400px;
+            border: 2px solid red;
+            background-image: url('https://www.codewithharry.com/static/common/img/photo.png');
+            background-repeat: no-repeat;/*repeat x and repeat y will make it repeat on x and y axis. */
+            background-position:100px 200px; /*x axis then y  */
+            /* background-position: center center; */
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is a paragraph</p>
+    <h3>This is 2nd heading</h3>
+    <p id="secondPara">This is my second paragraph</p>
+    <h3>This is 3rd heading</h3>
+    <p id="thirdPara">This is my third paragraph</p>
+</body>
+</html>

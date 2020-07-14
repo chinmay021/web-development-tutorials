@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Roll: <input type="text" name="myRoll" id="roll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Number: <input type="number" name="myNumber" id="">
+        </div>
+        <br>
+        <label for="eligible">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="mycheckbox" id="eligible">
+        </div>
+        <div>
+            Gender: Male<input type="radio" name="mygender" id=""> Female <input type="radio" name="mygender" id="">
+        </div>
+        <br>
+        <div>
+            write about yourself: <br><textarea name="your text area" id="" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+                <label for="car">car</label>
+                <select name="myCar" id="car">
+                    <option value="ind">indica</option>
+                    <option value="swf" selected>swift </option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="Reset now">
+        </div>
+    </form>
+</body>
+
+</html>
