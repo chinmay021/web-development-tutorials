@@ -7,8 +7,10 @@ function average(arr) {
     });
     return sum / arr.length;
 }
-module.exports = {
-    avg: average,
-    name: 'Chinmay',
-    repo: 'Github'
-};
+// module.exports = {
+//     avg: average,
+//     name: 'Chinmay',
+//     repo: 'Github'
+// };
+//module.exports is a object so we can export a property or attribute 
+module.exports.name = 'chinmay'
