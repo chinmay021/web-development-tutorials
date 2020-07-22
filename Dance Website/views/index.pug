@@ -1,0 +1,24 @@
+//- index.pug
+doctype html
+html
+    head
+        title This is title
+        style
+            include ../static/style.css
+    body
+        nav#navbar.top.firstClass.secondClass
+            ul
+                li  #[a(href='/') Home]
+                li  #[a(href='/') About]
+                li  #[a(href='/') Services]
+                li  #[a(href='/') Class Info]
+                li  #[a(href='/') Contact Us]
+        section#introSection
+            div.large Welcome to My Dance Academy
+            div.small Eat Sleep Dance Repeat.
+        section#sponsorSection
+            |  section for sponsors
+        section#footer
+            |  our footer here
+        script
+            include ../static/index.js

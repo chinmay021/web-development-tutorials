@@ -7,7 +7,8 @@ const port = 80;
 
 //EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static'))    //app.use('url name'),express.static('folder name') ->used to serving static files or adding static files to express app
-app.use(express.urlencoded())
+
+app.use(express.urlencoded()) //encoding the data send using post i.e not visible on the url
 
 
 //PUG SPECIFIC STUFF
@@ -23,7 +24,7 @@ app.get('/', (req, res) => {
     res.status(200).render('index.pug', params);
 });
 app.post('/', (req, res) => {
-    //variable name is passed through name attribute in the form ex name, address
+    //variable name is passed through name attribute in the form in html ex name, address
     form = req.body;
     console.log(form.name);
     let outputToWrite = `The name of the client is ${form.name}, ${form.age} years old, ${form.gender}, residing at ${form.address}.`
