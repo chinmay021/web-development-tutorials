@@ -1,8 +1,8 @@
 # web development tutorials
-files from web dev tutorial ( codewithharry)
+All files from web devlopment tutorial of codewithharry
 
 # front-end
-html, css, javascript
+`html`, `css`, `javascript`
 
 # back-end
-node.js, express js, mango db
+`node.js`, `express js`, `mango db`
