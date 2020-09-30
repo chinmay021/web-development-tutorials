@@ -1,8 +1,8 @@
-# web development tutorials
+# Web Development Tutorials - Codewithharry
 files from web dev tutorial ( codewithharry)
 
-# front-end
+# Front-end Development
 html, css, javascript
 
-# back-end
-node.js, express js, mango db
+# Back-end Development
+node.js, express js, mongo db
