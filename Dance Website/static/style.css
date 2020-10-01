@@ -9,7 +9,7 @@
 }
 #navbar{
     display: flex;
-    background-color: cyan;
+    background-color: black;
     height: 8vh;
     padding: 10px 4px;
     justify-content: center;
